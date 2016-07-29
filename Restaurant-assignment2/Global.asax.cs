@@ -12,6 +12,8 @@ namespace Restaurant_assignment2
     {
         protected void Application_Start()
         {
+            System.Data.Entity.Database.SetInitializer(
+        new Restaurant_assignment2.Models.SampleData());
             AreaRegistration.RegisterAllAreas();
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);

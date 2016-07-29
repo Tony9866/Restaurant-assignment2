@@ -1,0 +1,27 @@
+﻿<!--Sometime this way goes wrong -->
+@using Restaurant_assignment2.Models
+@model Album
+<!--other way is the c# did-->
+<!-- (at)model Restaurant_assignment2.Models.Album -->
+
+@{
+    ViewBag.Title = "Details";
+}
+
+
+<h2>Album: @Model.Title</h2>
+
+<ul>
+
+    <li>Genre: @Model.Genre.Name</li>
+    <li>Foodname: @Model.Food.Foodname</li>
+    <li>Price: @Model.Price</li>
+    <li>
+        Album Image:
+
+        <img src="@Model.AlbumArtUrl" alt="@Model.Title" />
+        
+    </li>
+
+</ul>
+
